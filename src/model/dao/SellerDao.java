@@ -5,6 +5,7 @@
 package model.dao;
 
 import java.util.List;
+import model.enteties.Department;
 import model.enteties.Seller;
 
 /**
@@ -12,10 +13,10 @@ import model.enteties.Seller;
  * @author jaspe
  */
 public interface SellerDao {
-    void voidInsertSeller();
-    void updateSeller();
-    void deleteById();
-    void sellerFindId();
+    void InsertSeller(Seller sl);
+    void updateSeller(Seller sl);
+    void deleteById(int id);
     Seller findById(Integer id); 
     List<Seller> findAll();
+    List<Seller> findByDepartment(Department dpt);
 }

@@ -13,10 +13,9 @@ import model.enteties.Seller;
  * @author jaspe
  */
 public interface DepartmentDao {
-    void voidInsertDepartment();
-    void updateDepartment();
-    void deleteById();
-    void sellerFindId();
-    Department findById(Integer id); 
+    void InsertDepartment(Department dep);
+    void updateDepartment(Department dep);
+    void deleteById(int id);
+    Department findById(Department dep); 
     List<Department> findAll();
 }
